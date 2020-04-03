@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> Happy TV </title>
+    <link rel ="stylesheet"; href = "HappyTV.css">
+    <script src= "HappyTV.js"> </script>
+  </head>
+
+  <body onload="openPage('Home', this, '#202020')"> <!-- Automatically opens home page -->
+
+    <div class="header"> <!-- navigation bar at top w/ buttons -->
+      <button class="namelink" oneclick="openPage('Happy TV', this, '#202020')">Happy TV</button>
+      <div class="header-right">
+        <button class="tablink" oneclick="openPage('Search', this, '#202020')">Search</button>
+        <button class="tablink" onclick="openPage('Genres', this, '#202020')">Genres</button>
+        <button class="tablink" onclick="openPage('Home', this, '#202020')"id="defaultOpen">Home</button>
+      </div>
+    </div>
+
+    <div id="Home" class="tabcontent">
+    <div class="mainPage">
+      <h2> Find your next TV show with Happy TV! </h2>
+      <h3> Popular Shows: </h3>
+      <!-- Photo Gallery -->
+      <div class="row">
+        <div class="column">
+          <div class="content">
+            <img src="SStrangerThingsPoster.jpg" alt="Stranger Things Poster" style="width:100%"> <!-- first poster -->
+            <h4> Stranger Things </h4>
+            <p> When Joyce's 12-year-old son, Will, goes missing, she launches a terrifying investigation into his disappearance with local authorities. As they search for answers, they unravel a series of extraordinary mysteries involving secret government experiments, unnerving supernatural forces, and a very unusual little girl. </p>
+            <!-- ratings: 8.9/10 IMDb, 94% Rotton Tomatoes, 8.6/10 TV.com -->
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="TheOfficePoster.jpeg" alt="The Office Poster" style="width:100%"> <!-- second poster -->
+            <h4> The Office </h4>
+            <p> A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inappropriate behavior, and tedium. </p>
+            <!-- 8.8/10 IMDb, 9/10 TV.com, 76% Rotton Tomatoes -->
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src ="FFriendsPoster.jpg" alt="Friends Poster" style="width:100%"> <!-- third poster -->
+            <h4> Friends </h4>
+            <p> Three young men and three young women - of the BFF kind - live in the same apartment complex and face life and love in New York. They're not above sticking their noses into one another's businesses and swapping romantic partners, which always leads to the kind of hilarity average people will never experience - especially during breakups. </p>
+            <!-- 8.9/10 IMDb, 9.2/10 TV.com, 78% Rotton Tomatoes -->
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="H2OPoster.jpg" alt="H2O: Just Add Water Poster" style="width:100%"> <!-- fourth poster -->
+            <h4> H2O: Just Add Water </h4>
+            <p> Teenagers always feel different, but these three Australian girls really are different; they're mermaids! Trying to keep their special powers a secret is hard for Emma, Rikki and Cleo. When they're not in school they're using their magical powers to save sea turtles and rescue those in need. Local bully Zane and popular snob Miriam don't make it easy on the girls to keep their adventures hidden. </p>
+            <!-- 7.3/10 IMDb, 8.4/10 TV.com -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+    <div id="Genres" class="tabcontent">
+      <h2> List of TV shows by genre: </h2>
+      <div>
+        <h3> Action: </h3>
+        <h4> Arrow </h4>
+          <h5>When presumed-dead billionaire playboy Oliver Queen returns home to Starling City after five years stranded on a remote island<span id="dots">...</span><span id="more"> in the Pacific, he hides the changes the experience had on him, while secretly seeking reconciliation with his ex, Laurel. By day he picks up where he left off, playing the carefree philanderer he used to be, but at night he dons the alter ego of Arrow and works to right the wrongs of his family and restore the city to its former glory. Complicating his mission is Laurel's father, Detective Quentin Lance, who is determined to put the vigilante behind bars.</span></h5>
+          <button onclick="myFunction()" id="myBtn">Read more</button>
+       <h4> The Flash </h4>
+          <h5> At 11, Barry Allen's life changed completely when his mother died in a freak accident and his innocent father was convicted of her murder.<span id="dots">...</span><span id="more"> Orphaned Barry later becomes Detective Joe West. Now a crime-scene investigator, his dedication to learn the truth about his mother's death drives him to follow up on every new scientific advancement and urban legend. When his latest obsession - a particle accelerator heralded as a world-changing invention - causes an explosion, it creates a freak storm and Barry is struck by lightning. He awakes from a coma nine months later with the power of superspeed. When he learns that others who have gained powers use them for evil, he dedicates himself to protecting the innocent, while still trying to solve the older mystery.</span></h5>
+          <button onclick="myFunction()" id="myBtn">Read more</button>
+      </div>
+      <div>
+        <h3> Science-Fiction: </h3>
+        <h4> Stranger Things </h4>
+        <h5>When Joyce's 12-year-old son, Will, goes missing, she launches a terrifying<span id="dots">...</span><span id="more">investigation into his disappearance with local authorities. As they search for answers, they unravel a series of extraordinary mysteries involving secret government experiments, unnerving supernatural forces, and a very unusual little girl.</span><h5>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+      </div>
+    </div>
+
+  </body>
+
+</html>

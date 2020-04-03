@@ -1,0 +1,140 @@
+h2 {
+  color: black;
+  text-align: center;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #1290ff /*green #32cd32 */;
+  padding: 14px 16px;
+}
+
+.namelink {
+  background-color: #1290ff;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+  width: 30%;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.tablink {
+  background-color: #1290ff;
+  color: white;
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 20%;
+}
+
+.tablink:hover {
+  background-color: #1e90ff /*light green #47d247 */;
+}
+
+.tablink:active {
+  background-color: white;
+  color: #1290ff;
+}
+
+.tabcontent {
+  color: #202020 /*dark grey */;
+  display: none;
+  padding: none;
+  height: 100%;
+}
+
+#Home, #Genres, #Search, {background-color: #202020;}
+
+@media screen and (max-width: 500px) {
+  .namelink {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .tablink {
+    float: none;
+  }
+  }
+}
+
+
+
+/* Gallery code */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white; /*#202020 */
+  color: black;
+  padding: 20px;
+}
+
+.mainPage {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2, h3 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+    background-color: #202020;
+    padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/* genres page read more buttons */
+#more {display: none;}
